@@ -1,0 +1,3 @@
+[submodule "themes/cmc-hugo-theme"]
+	path = themes/cmc-hugo-theme
+	url = https://github.com/masa162/cmc-hugo-theme.git

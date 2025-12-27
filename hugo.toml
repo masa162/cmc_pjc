@@ -1,0 +1,47 @@
+baseURL = '/'
+languageCode = 'ja'
+title = 'Punk Junk City'
+theme = "cmc-hugo-theme"
+
+[params]
+  # 全セクションをメニューに表示
+  BookSection = "*"
+
+  # GitHubリポジトリ設定
+  BookRepo = "https://github.com/masa162/cmc_pjc"
+  BookEditPath = "edit/main/content"
+
+  # 検索機能を有効化
+  BookSearch = true
+
+  # 目次を表示
+  BookToC = true
+
+  # テーマカラー（light, dark, auto）
+  BookTheme = 'auto'
+
+# メニュー設定（オプション - 必要に応じてカスタマイズ）
+[[menu.main]]
+  name = "エピソード"
+  pageRef = "/episodes"
+  weight = 10
+
+[[menu.main]]
+  name = "キャラクター"
+  pageRef = "/characters"
+  weight = 20
+
+[[menu.main]]
+  name = "設定"
+  pageRef = "/settings"
+  weight = 30
+
+# Markdown設定
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Shortcodeを正しくレンダリングするため
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
